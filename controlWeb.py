@@ -9,10 +9,11 @@ time.sleep(1)
 #找到搜尋框
 input=driver.find_element_by_name("q")
 #在搜尋框輸入hebe
-input.send_keys("hebe")
+input.send_keys("UFED")
 #找到查詢鈕
 search=driver.find_element_by_name("btnK")
 #點擊
 search.click()
+time.sleep(2)
 htmltext=driver.page_source
 driver.close()
